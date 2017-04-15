@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace MVCDemo.Controllers
 {
+    [Authorize()]
     public class PhoneController : Controller
     {
         // GET: Phone
