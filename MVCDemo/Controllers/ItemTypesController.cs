@@ -13,7 +13,7 @@ namespace MVCDemo.Controllers
     [Authorize]
     public class ItemTypesController : Controller
     {
-        private SampleDb db = new SampleDb();
+        private SampleDbContext db = new SampleDbContext();
 
         // GET: ItemTypes
         public ActionResult Index()
@@ -143,10 +143,13 @@ namespace MVCDemo.Controllers
             return RedirectToAction("Index");
         }
 
-        // GET: ItemTypes/CreateType
-         public ActionResult CreateType()
+        // GET: ItemTypes/CreateType/1
+         public ActionResult CreateType(int id)
         {
-            var ItemId = TempData["Item.Id"];
+            //Note the id being passed here is Item.Id of the item model that initiated
+            //the create type call
+
+           // TempData["CreateType"] = id;
             return View();
         }
 
@@ -156,9 +159,17 @@ namespace MVCDemo.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult CreateType(ItemType itemType)
         {
-            var ItemId = TempData["Item.Id"];
-            TempData["Item.Id"] = ItemId;
-            return View();
+            //Note:
+            //  itemType.Id has the item.Id 
+            //  from the item that initiated the create type
+            var x = itemType.Id;
+            itemType.Id = 0;
+            var item = db.Items.Find(x);
+            itemType = db.ItemTypes.Add(itemType);
+            db.SaveChanges();
+            item.ItemTypeId = itemType.Id;
+            db.SaveChanges();
+            return RedirectToAction("Edit", "Items", new { item.Id });
         }
 
         protected override void Dispose(bool disposing)

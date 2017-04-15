@@ -12,7 +12,7 @@ namespace MVCDemo.Controllers
 {
     public class ItemsController : Controller
     {
-        private SampleDb db = new SampleDb();
+        private SampleDbContext db = new SampleDbContext();
        
 
         // GET: Items
@@ -47,6 +47,7 @@ namespace MVCDemo.Controllers
             ViewBag.ItemTypeId = new SelectList(db.ItemTypes, "Id", "Name");
             return View();
         }
+
 
         // POST: Items/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
@@ -130,15 +131,14 @@ namespace MVCDemo.Controllers
             return RedirectToAction("Index");
         }
 
-        // POST: Items/CreateType/5
+        // GET: Items/CreateType/5
         [Authorize]
         [HttpGet]
-        public ActionResult CreateType(Item item)
+        public ActionResult CreateType(int id)
         {
             // Item item = db.Items.Find(id);
-            TempData["Item.Id"] = item.Id;
-            TempData["Item.Id"] = id;
-            return RedirectToAction("CreateType","ItemTypes");
+          //  TempData["CreateType"] = id;
+            return RedirectToAction("CreateType", "ItemTypes",new { id});
         }
 
         protected override void Dispose(bool disposing)
