@@ -13,7 +13,7 @@ namespace MVCDemo.Controllers
         private SampleDbContext db = new SampleDbContext();
         // GET: /Item/
         public ActionResult Index(string filter = null, int page = 1,
-        int pageSize = 5, string sort = "Id", string sortdir = "DESC")
+        int pageSize = 5, string sort = "Id", string sortdir = "ASC")
         {
             var records = new PagedList<Item>();
             ViewBag.filter = filter;
@@ -78,15 +78,15 @@ namespace MVCDemo.Controllers
             {
                 return HttpNotFound();
             }
-
+            ViewBag.ItemTypeId = new SelectList(db.ItemTypes, "Id", "Name", Item.ItemTypeId);
             return PartialView("Edit", Item);
         }
         // POST: /Item/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(Item Item)
+        public ActionResult Edit([Bind(Include = "Id,Name,Description,ItemTypeId")] Item Item)
         {
-            if (ModelState.IsValid)
+            if (ModelState.IsValid) 
             {
                 db.Entry(Item).State = EntityState.Modified;
                 db.SaveChanges();
@@ -116,4 +116,6 @@ namespace MVCDemo.Controllers
             return Json(new { success = true });
         }
     }
+    
+
 }

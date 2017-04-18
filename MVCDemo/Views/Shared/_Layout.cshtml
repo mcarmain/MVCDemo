@@ -25,9 +25,9 @@
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                     @if (Request.IsAuthenticated)
                     {
-                    <li>@Html.ActionLink("Items", "Index", "Items")</li>
-                    <li>@Html.ActionLink("Types", "Index", "ItemTypes")</li>
-                    <li>@Html.ActionLink("Phones", "Index", "Phone")</li>
+                    <li>@Html.ActionLink("Items", "Index", "Item")</li>
+                    @*<li>@Html.ActionLink("Types", "Index", "ItemTypes")</li>*@
+                    @*<li>@Html.ActionLink("Phones", "Index", "Phone")</li>*@
                     }
                 </ul>
                 @Html.Partial("_LoginPartial")

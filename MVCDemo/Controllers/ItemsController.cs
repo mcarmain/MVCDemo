@@ -44,7 +44,6 @@ namespace MVCDemo.Controllers
         public ActionResult Create()
         {
             ViewBag.ItemTypeId = new SelectList(db.ItemTypes, "Id", "Name");
-            ViewBag.ItemTypeId = new SelectList(db.ItemTypes, "Id", "Name");
             return View();
         }
 

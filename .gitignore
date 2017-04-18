@@ -45,3 +45,8 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+.vs/MVCDemo/v15/.suo
+*.suo
+.vs/MVCDemo/v15/.suo
+MVCDemo/App_Data/DefaultConnection.mdf
+*.ldf
