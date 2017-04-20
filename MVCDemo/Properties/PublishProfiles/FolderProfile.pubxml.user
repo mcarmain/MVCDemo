@@ -7,13 +7,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <_NewBackgroundProfile>False</_NewBackgroundProfile>
-    <_PublishTargetUrl>D:\Project\MVCDemo\MVCDemo\bin\Release\PublishOutput</_PublishTargetUrl>
+    <_PublishTargetUrl>D:\Publish\MVCDemo</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="ApplicationInsights.config">
       <publishTime>04/10/2017 21:42:46</publishTime>
     </File>
     <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>02/22/2013 07:43:40</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
       <publishTime>02/22/2013 07:43:40</publishTime>
     </File>
     <File Include="bin/ApplicationInsights.config">
@@ -89,7 +92,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/05/2012 10:08:46</publishTime>
     </File>
     <File Include="bin/MVCDemo.dll">
-      <publishTime>04/11/2017 01:33:06</publishTime>
+      <publishTime>04/19/2017 12:32:52</publishTime>
+    </File>
+    <File Include="bin/MVCDemo.pdb">
+      <publishTime>04/19/2017 12:32:52</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
       <publishTime>08/03/2014 20:33:56</publishTime>
@@ -175,6 +181,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="bin/roslyn/VBCSCompiler.exe.config">
       <publishTime>06/27/2016 14:50:24</publishTime>
     </File>
+    <File Include="bin/System.Linq.Dynamic.dll">
+      <publishTime>10/15/2016 20:49:24</publishTime>
+    </File>
     <File Include="bin/System.Web.Helpers.dll">
       <publishTime>01/28/2015 03:04:30</publishTime>
     </File>
@@ -206,7 +215,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/10/2017 21:42:32</publishTime>
     </File>
     <File Include="Content/Site.css">
-      <publishTime>04/10/2017 21:42:28</publishTime>
+      <publishTime>04/14/2017 14:32:14</publishTime>
     </File>
     <File Include="favicon.ico">
       <publishTime>04/10/2017 21:42:28</publishTime>
@@ -227,7 +236,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/10/2017 23:56:04</publishTime>
     </File>
     <File Include="packages.config">
-      <publishTime>04/10/2017 21:42:48</publishTime>
+      <publishTime>04/14/2017 15:54:02</publishTime>
+    </File>
+    <File Include="Scripts/appjs/item.js">
+      <publishTime>04/17/2017 00:59:18</publishTime>
+    </File>
+    <File Include="Scripts/appjs/phone.js">
+      <publishTime>04/14/2017 13:39:06</publishTime>
     </File>
     <File Include="Scripts/bootstrap.js">
       <publishTime>04/10/2017 21:42:32</publishTime>
@@ -243,6 +258,24 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Scripts/jquery-1.10.2.min.map">
       <publishTime>04/10/2017 21:42:32</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.js">
+      <publishTime>04/14/2017 15:54:02</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.min.js">
+      <publishTime>04/14/2017 15:54:02</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.min.map">
+      <publishTime>04/14/2017 15:54:02</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.slim.js">
+      <publishTime>04/14/2017 15:54:02</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.slim.min.js">
+      <publishTime>04/14/2017 15:54:02</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.slim.min.map">
+      <publishTime>04/14/2017 15:54:02</publishTime>
     </File>
     <File Include="Scripts/jquery.validate.js">
       <publishTime>04/10/2017 21:42:38</publishTime>
@@ -310,26 +343,44 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Views/Home/Index.cshtml">
       <publishTime>04/10/2017 21:42:28</publishTime>
     </File>
+    <File Include="Views/Item/Create.cshtml">
+      <publishTime>04/19/2017 00:26:20</publishTime>
+    </File>
+    <File Include="Views/Item/Delete.cshtml">
+      <publishTime>04/17/2017 01:44:50</publishTime>
+    </File>
+    <File Include="Views/Item/Details.cshtml">
+      <publishTime>04/17/2017 01:20:46</publishTime>
+    </File>
+    <File Include="Views/Item/Edit.cshtml">
+      <publishTime>04/17/2017 21:19:52</publishTime>
+    </File>
+    <File Include="Views/Item/Index.cshtml">
+      <publishTime>04/17/2017 01:05:36</publishTime>
+    </File>
     <File Include="Views/Items/Create.cshtml">
-      <publishTime>04/10/2017 23:56:06</publishTime>
+      <publishTime>04/18/2017 23:08:14</publishTime>
     </File>
     <File Include="Views/Items/Delete.cshtml">
-      <publishTime>04/10/2017 23:56:06</publishTime>
+      <publishTime>04/11/2017 17:12:10</publishTime>
     </File>
     <File Include="Views/Items/Details.cshtml">
-      <publishTime>04/10/2017 23:56:06</publishTime>
+      <publishTime>04/11/2017 16:52:46</publishTime>
     </File>
     <File Include="Views/Items/Edit.cshtml">
-      <publishTime>04/10/2017 23:56:06</publishTime>
+      <publishTime>04/18/2017 23:10:40</publishTime>
     </File>
     <File Include="Views/Items/Index.cshtml">
-      <publishTime>04/10/2017 23:56:06</publishTime>
+      <publishTime>04/11/2017 16:57:12</publishTime>
     </File>
     <File Include="Views/ItemTypes/Create.cshtml">
-      <publishTime>04/10/2017 23:56:06</publishTime>
+      <publishTime>04/13/2017 15:16:58</publishTime>
+    </File>
+    <File Include="Views/ItemTypes/CreateType.cshtml">
+      <publishTime>04/13/2017 16:10:50</publishTime>
     </File>
     <File Include="Views/ItemTypes/Delete.cshtml">
-      <publishTime>04/10/2017 23:56:06</publishTime>
+      <publishTime>04/11/2017 17:12:52</publishTime>
     </File>
     <File Include="Views/ItemTypes/Details.cshtml">
       <publishTime>04/10/2017 23:56:06</publishTime>
@@ -338,7 +389,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/10/2017 23:56:06</publishTime>
     </File>
     <File Include="Views/ItemTypes/Index.cshtml">
-      <publishTime>04/10/2017 23:56:06</publishTime>
+      <publishTime>04/11/2017 16:31:34</publishTime>
     </File>
     <File Include="Views/Manage/AddPhoneNumber.cshtml">
       <publishTime>04/10/2017 23:56:06</publishTime>
@@ -358,6 +409,21 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Views/Manage/VerifyPhoneNumber.cshtml">
       <publishTime>04/10/2017 23:56:06</publishTime>
     </File>
+    <File Include="Views/Phone/Create.cshtml">
+      <publishTime>04/19/2017 00:26:20</publishTime>
+    </File>
+    <File Include="Views/Phone/Delete.cshtml">
+      <publishTime>04/14/2017 14:27:34</publishTime>
+    </File>
+    <File Include="Views/Phone/Details.cshtml">
+      <publishTime>04/14/2017 14:00:02</publishTime>
+    </File>
+    <File Include="Views/Phone/Edit.cshtml">
+      <publishTime>04/14/2017 14:20:42</publishTime>
+    </File>
+    <File Include="Views/Phone/Index.cshtml">
+      <publishTime>04/14/2017 17:27:10</publishTime>
+    </File>
     <File Include="Views/Shared/Error.cshtml">
       <publishTime>04/10/2017 21:42:38</publishTime>
     </File>
@@ -365,7 +431,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/10/2017 21:42:40</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>04/10/2017 23:50:32</publishTime>
+      <publishTime>04/17/2017 21:28:24</publishTime>
     </File>
     <File Include="Views/Shared/_LoginPartial.cshtml">
       <publishTime>04/10/2017 21:42:40</publishTime>
@@ -377,7 +443,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/10/2017 21:42:28</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>04/11/2017 01:33:06</publishTime>
+      <publishTime>04/19/2017 12:32:54</publishTime>
     </File>
   </ItemGroup>
 </Project>

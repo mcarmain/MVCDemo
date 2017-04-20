@@ -63,4 +63,11 @@ namespace MVCDemo.Models
         [MinLength(2, ErrorMessageResourceName = "NameIsNotLongEnough", ErrorMessageResourceType = typeof(ErrorMessages))]
         public string Name { get; set; }
     }
+
+    public class ClearModel
+    {
+        [Required]
+        [Display(Name = "Clear Y/N ?")]
+        public string Clear { get; set; }
+    }
 }

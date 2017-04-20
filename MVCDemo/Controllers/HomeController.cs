@@ -15,7 +15,7 @@ namespace MVCDemo.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "MVC Demo Application - demonstrates ASP.NET MVC Application with security.";
+            ViewBag.Message = "About";
 
             return View();
         }

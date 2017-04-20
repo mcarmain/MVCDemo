@@ -55,6 +55,7 @@ namespace MVCDemo.Controllers
         public ActionResult Create()
         {
             var Item = new Item();
+            ViewBag.ItemTypeId = new SelectList(db.ItemTypes, "Id", "Name", 1);
             return PartialView("Create", Item);
         }
         // POST: /Item/Create

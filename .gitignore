@@ -50,3 +50,8 @@ Temporary Items
 .vs/MVCDemo/v15/.suo
 MVCDemo/App_Data/DefaultConnection.mdf
 *.ldf
+MVCDemo/obj/Debug/CoreCompileInputs.cache
+*.cache
+MVCDemo/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+MVCDemo/App_Data/DefaultConnection.mdf
+*.ldf
