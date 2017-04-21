@@ -2,7 +2,7 @@
     ViewBag.Title = "Home Page";
 }
 <div class="jumbotron">
-        <h1>SSPL</h1>
+        <h1>Demo</h1>
 </div>
 @if (!Request.IsAuthenticated)
 {
@@ -22,17 +22,15 @@
 @if (Request.IsAuthenticated)
 {
     <div class="row">
-        <div class="col-md-8">
-            <h4> The Item page features a Searchable Sortable Paged List (SSPL)</h4>
+        <div clss="col-offset-md-2 col-md-10">
+            <h5>Responsive Web App with secure CRUD operations bootstrap modal popups.</h5>
         </div>
-        <div class="col-md-3">
-            <a clsss="btn btn-default" href="/Item/"><h5>View&nbsp;Items</h5></a>
+        <div class="col-offset-md-2 col-md-10">
+            <a class="btn btn-success" href="/Item/"><h5>View&nbsp;Demo</h5></a>
         </div>
-</div>
+    </div>
 }
-<div clss="col-offset-md-2 col-md-10">
-    <h5>Demonstrates Responsive Web App with secure CRUD operations.</h5>
-</div>
+
 
 <!-- modal placeholder-->
 <div id='myModal' class='modal fade in'>
