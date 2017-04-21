@@ -1,9 +1,22 @@
 ﻿@{
-    ViewBag.Title = "Demo";
+    ViewBag.Title = "About";
 }
 <h2>@ViewBag.Title.</h2>
 <h3>@ViewBag.Message</h3>
 
 <p>Responsive Web App with secure CRUD operations bootstrap &amp; modal popups.</p> 
 <p/>
-<p>Built with ASP.NET / MVC / Entity Framework / Boostrap</p>
+<p>Built with ASP.NET / MVC / Entity Framework / Boostrap / WebGrid</p>
+
+<!-- modal placeholder-->
+<div id='myModal' class='modal fade in'>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div id='myModalContent'></div>
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    @Scripts.Render("~/scripts/appjs/modal.js")
+}
