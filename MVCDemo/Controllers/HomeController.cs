@@ -15,14 +15,14 @@ namespace MVCDemo.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "About";
+            ViewBag.Message = "Demo";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Contact";
 
             return View();
         }

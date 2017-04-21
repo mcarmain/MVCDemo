@@ -55,3 +55,17 @@ MVCDemo/obj/Debug/CoreCompileInputs.cache
 MVCDemo/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
 MVCDemo/App_Data/DefaultConnection.mdf
 *.ldf
+MVCDemo/App_Data/DefaultConnection.mdf
+MVCDemo/App_Data/DefaultConnection_log.ldf
+MVCDemo/MVCDemo.csproj.user
+*.cache
+/MVCDemo/bin
+*.suo
+MVCDemo/ApplicationInsights.config
+*.mdf
+*.ldf
+*.user
+.vs/MVCDemo/v15/.suo
+*.user
+*.dll
+*.pdb
