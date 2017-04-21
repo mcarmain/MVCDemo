@@ -18,6 +18,8 @@
         </div>
     </div>
     <div class="row" />
+    <div class="row">   Email: Guest1@guest.com</div>
+    <div class="row">Password: Guest1@guest.com</div>
 }
 @if (Request.IsAuthenticated)
 {
@@ -32,6 +34,8 @@
 }
 
 
+
+
 <!-- modal placeholder-->
 <div id='myModal' class='modal fade in'>
     <div class="modal-dialog">
@@ -40,3 +44,7 @@
         </div>
     </div>
 </div>
+
+@section scripts{
+    @Scripts.Render("~/scripts/appjs/modal.js")
+}

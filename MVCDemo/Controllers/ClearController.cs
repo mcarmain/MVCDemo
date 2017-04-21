@@ -6,30 +6,31 @@ using System.Web.Mvc;
 using MVCDemo.Models;
 namespace MVCDemo.Controllers
 {
+    [Authorize()]
     public class ClearController : Controller
     {
-        // GET: Clear
-        public ActionResult Index()
+        // GET: Clear/Index
+        [HttpGet]
+        public ActionResult Clear()
         {
             ClearModel c = new ClearModel();
+            c.Clear = "N";
             return PartialView(c);
         }
-        // POST: /Item/Create
-        [HttpPost]
-        public ActionResult Index(ClearModel Item)
+        // POST: /Clear/Index
+        [HttpPost, ActionName("Clear")]
+        public ActionResult ClearConfirmed(ClearModel Item)
         {
-         //   if (ModelState.IsValid)
-           // {
-               // db.Items.Add(Item);
-              //  db.SaveChanges();
-             //   return Json(new { success = true });
-            //}
-            //  return Json(Item, JsonRequestBehavior.AllowGet);
-            return RedirectToAction("Index", "Home");
-        }
-        public ActionResult Cancel()
-        {
-            return RedirectToAction("Index", "Home");
+            if (ModelState.IsValid)
+            {
+
+                SampleDbContext context = new SampleDbContext();
+                context.Database.Delete();
+                context.Database.Initialize(true);
+                context.SaveChanges();
+                return Json(new { success = true });
+            }
+            return Json(Item, JsonRequestBehavior.AllowGet);
         }
     }
 }

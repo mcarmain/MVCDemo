@@ -225,7 +225,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\appjs\item.js" />
-    <Content Include="Scripts\appjs\phone.js" />
+    <Content Include="Scripts\appjs\modal.js" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -315,7 +315,7 @@
     <Content Include="Views\Item\Edit.cshtml" />
     <Content Include="Views\Item\Delete.cshtml" />
     <Content Include="Views\Item\Create.cshtml" />
-    <Content Include="Views\Clear\Index.cshtml" />
+    <Content Include="Views\Clear\Clear.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

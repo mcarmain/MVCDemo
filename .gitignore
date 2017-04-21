@@ -69,3 +69,6 @@ MVCDemo/ApplicationInsights.config
 *.user
 *.dll
 *.pdb
+.vs/MVCDemo/v15/.suo
+MVCDemo/App_Data/DefaultConnection.mdf
+*.ldf

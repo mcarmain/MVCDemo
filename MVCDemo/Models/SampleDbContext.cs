@@ -66,7 +66,9 @@ namespace MVCDemo.Models
 
     public class ClearModel
     {
-        [Required]
+        [Key]
+        [Display(Name ="Id")]
+        public int Id { get; set; }
         [Display(Name = "Clear Y/N ?")]
         public string Clear { get; set; }
     }

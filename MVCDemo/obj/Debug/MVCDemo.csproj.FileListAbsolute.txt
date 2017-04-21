@@ -408,7 +408,6 @@ D:\GitHub\MVCDemo\MVCDemo\bin\EntityFramework.SqlServer.xml
 D:\GitHub\MVCDemo\MVCDemo\bin\Microsoft.AspNet.Identity.Core.xml
 D:\GitHub\MVCDemo\MVCDemo\bin\Microsoft.AspNet.Identity.Owin.xml
 D:\GitHub\MVCDemo\MVCDemo\bin\Microsoft.AspNet.Identity.EntityFramework.xml
-D:\GitHub\MVCDemo\MVCDemo\obj\Debug\MVCDemo.csprojResolveAssemblyReference.cache
 D:\GitHub\MVCDemo\MVCDemo\obj\Debug\MVCDemo.Properties.ErrorMessages.resources
 D:\GitHub\MVCDemo\MVCDemo\obj\Debug\MVCDemo.csproj.GenerateResource.Cache
 D:\GitHub\MVCDemo\MVCDemo\obj\Debug\MVCDemo.dll

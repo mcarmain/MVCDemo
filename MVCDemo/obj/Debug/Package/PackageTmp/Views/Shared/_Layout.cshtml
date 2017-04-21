@@ -26,9 +26,7 @@
                     @if (Request.IsAuthenticated)
                     {
                     <li>@Html.ActionLink("Items", "Index", "Item")</li>
-                    @*<li>@Html.ActionLink("Types", "Index", "ItemTypes")</li>*@
-                    <li>@Html.ActionLink("Clear", "Index", "Clear")</li>
-                    @*<li>@Html.ActionLink("Phones", "Index", "Phone")</li>*@
+                    <li> @Html.Raw("<a data-modal='' href='/clear/clear" + "' title='Clear'> <span class='glyphicon glyphicon-trash'> </span> </a>")</li>
                     }
                 </ul>
                 @Html.Partial("_LoginPartial")
