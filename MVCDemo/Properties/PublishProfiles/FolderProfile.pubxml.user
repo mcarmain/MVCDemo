@@ -7,7 +7,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <_NewBackgroundProfile>False</_NewBackgroundProfile>
-    <_PublishTargetUrl>D:\Publish\MVCDemo</_PublishTargetUrl>
+    <_PublishTargetUrl>C:\inetpub\wwwroot\MVCDemo</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="ApplicationInsights.config">
@@ -92,10 +92,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/05/2012 10:08:46</publishTime>
     </File>
     <File Include="bin/MVCDemo.dll">
-      <publishTime>04/21/2017 15:00:14</publishTime>
+      <publishTime>04/21/2017 21:06:56</publishTime>
     </File>
     <File Include="bin/MVCDemo.pdb">
-      <publishTime>04/21/2017 15:00:14</publishTime>
+      <publishTime>04/21/2017 21:06:56</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
       <publishTime>04/02/2017 17:46:32</publishTime>
@@ -440,13 +440,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/20/2017 11:37:36</publishTime>
     </File>
     <File Include="Views/Home/About.cshtml">
-      <publishTime>04/20/2017 17:41:10</publishTime>
+      <publishTime>04/21/2017 15:53:46</publishTime>
     </File>
     <File Include="Views/Home/Contact.cshtml">
-      <publishTime>04/19/2017 22:12:44</publishTime>
+      <publishTime>04/21/2017 15:39:20</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>04/21/2017 00:43:12</publishTime>
+      <publishTime>04/21/2017 15:43:22</publishTime>
     </File>
     <File Include="Views/Item/Create.cshtml">
       <publishTime>04/19/2017 00:26:20</publishTime>
@@ -536,7 +536,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/10/2017 21:42:40</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>04/21/2017 14:05:34</publishTime>
+      <publishTime>04/21/2017 15:57:34</publishTime>
     </File>
     <File Include="Views/Shared/_LoginPartial.cshtml">
       <publishTime>04/10/2017 21:42:40</publishTime>
@@ -548,7 +548,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/10/2017 21:42:28</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>04/21/2017 14:26:46</publishTime>
+      <publishTime>04/21/2017 21:06:58</publishTime>
     </File>
   </ItemGroup>
 </Project>

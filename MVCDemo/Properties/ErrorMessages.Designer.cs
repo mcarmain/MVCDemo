@@ -63,6 +63,33 @@ namespace MVCDemo.Properties {
         /// <summary>
         ///   Looks up a localized string similar to {0} is not long enough at least {1} characters are required..
         /// </summary>
+        internal static string AuthorIsNotLongEnough {
+            get {
+                return ResourceManager.GetString("AuthorIsNotLongEnough", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} is required..
+        /// </summary>
+        internal static string AuthorIsRequired {
+            get {
+                return ResourceManager.GetString("AuthorIsRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} is too long. Maximum Length is {1} characters.
+        /// </summary>
+        internal static string AuthorIsTooLong {
+            get {
+                return ResourceManager.GetString("AuthorIsTooLong", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} is not long enough at least {1} characters are required..
+        /// </summary>
         internal static string DescriptionIsNotLongEnough {
             get {
                 return ResourceManager.GetString("DescriptionIsNotLongEnough", resourceCulture);
@@ -111,6 +138,33 @@ namespace MVCDemo.Properties {
         internal static string NameIsTooLong {
             get {
                 return ResourceManager.GetString("NameIsTooLong", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} is not long enough at least {1} characters are required..
+        /// </summary>
+        internal static string PublisherIsNotLongEnough {
+            get {
+                return ResourceManager.GetString("PublisherIsNotLongEnough", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} is required..
+        /// </summary>
+        internal static string PublisherIsRequired {
+            get {
+                return ResourceManager.GetString("PublisherIsRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} is too long..
+        /// </summary>
+        internal static string PublisherIsTooLong {
+            get {
+                return ResourceManager.GetString("PublisherIsTooLong", resourceCulture);
             }
         }
         

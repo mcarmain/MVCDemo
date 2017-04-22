@@ -24,52 +24,10 @@ namespace MVCDemo.Models
         // on configuring and using a Code First model, see http://go.microsoft.com/fwlink/?LinkId=390109.
 
         public virtual DbSet<Item> Items { get; set; }
+        public virtual DbSet<Book> Books { get; set; }
+        //public virtual DbSet<Item> Albums { get; set; }
         public virtual DbSet<ItemType> ItemTypes { get; set; }
+        public virtual DbSet<BookType> BookTypes { get; set; }
         public virtual DbSet<Phone> Phones { get; set; }
-    }
-
-    public class Item
-    {
-        public virtual int Id { get; set; }
-
-        [Display(Name = "Name")]
-        [Required(ErrorMessageResourceType = typeof(ErrorMessages), ErrorMessageResourceName = "NameIsRequired")]
-        [StringLength(50, ErrorMessageResourceType = typeof(ErrorMessages), ErrorMessageResourceName = "NameIsTooLong")]
-        [MinLength(2, ErrorMessageResourceName = "NameIsNotLongEnough", ErrorMessageResourceType = typeof(ErrorMessages))]
-        // [MinLength(1, ErrorMessage ="{0} not long enough.", ErrorMessageResourceName = "NameNotLongEnough", ErrorMessageResourceType = typeof(ErrorMessages))]
-        public virtual string Name { get; set; }
-
-        [Display(Name = "Description")]
-        [Required(ErrorMessageResourceType = typeof(ErrorMessages), ErrorMessageResourceName = "DescriptionIsRequired")]
-        [StringLength(50, ErrorMessageResourceType = typeof(ErrorMessages), ErrorMessageResourceName = "DescriptionIsTooLong")]
-        [MinLength(3, ErrorMessageResourceName = "DescriptionIsNotLongEnough", ErrorMessageResourceType = typeof(ErrorMessages))]
-        public virtual string Description { get; set; }
-
-        [Display(Name = "Type")]
-        [Required(ErrorMessageResourceType = typeof(ErrorMessages), ErrorMessageResourceName = "TypeIsRequired")]
-        public virtual int ItemTypeId { get; set; }
-        [Display(Name = "Type")]
-        public virtual ItemType ItemType { get; set; }
-
-    }
-
-    public class ItemType
-    {
-        public int Id { get; set; }
-
-        [Display(Name = "Name")]
-        [Required(ErrorMessageResourceType = typeof(ErrorMessages), ErrorMessageResourceName = "NameIsRequired")]
-        [StringLength(50, ErrorMessageResourceType = typeof(ErrorMessages), ErrorMessageResourceName = "NameIsTooLong")]
-        [MinLength(2, ErrorMessageResourceName = "NameIsNotLongEnough", ErrorMessageResourceType = typeof(ErrorMessages))]
-        public string Name { get; set; }
-    }
-
-    public class ClearModel
-    {
-        [Key]
-        [Display(Name ="Id")]
-        public int Id { get; set; }
-        [Display(Name = "Clear Y/N ?")]
-        public string Clear { get; set; }
     }
 }

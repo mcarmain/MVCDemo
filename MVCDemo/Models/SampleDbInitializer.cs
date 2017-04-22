@@ -39,6 +39,19 @@ namespace MVCDemo
              new Phone{Model="Samsung Galaxy 0", Company="Samsung",Price= 9}
             };
             phones.ForEach(p => context.Phones.Add(p));
+
+            var type3 = context.BookTypes.Add(new BookType { Id = 1, Name = "Type I" });
+            var type4 = context.BookTypes.Add(new BookType { Id = 2, Name = "Type II" });
+
+
+            var books = new List<Book>
+            {
+                new Book { Name ="Name1",Description="Description1",BookTypeId=1,Publisher="Publisher1",Author="Author1"},
+                 new Book { Name ="Name2",Description="Description2",BookTypeId=1,Publisher="Publisher2",Author="Author2"},
+                 new Book { Name ="Name3",Description="Description3",BookTypeId=1,Publisher="Publisher3",Author="Author3"}
+            };
+            books.ForEach(b => context.Books.Add(b));
+
             context.SaveChanges();
             base.Seed(context);
         }
