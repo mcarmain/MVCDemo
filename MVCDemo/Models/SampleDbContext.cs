@@ -27,7 +27,7 @@ namespace MVCDemo.Models
         public virtual DbSet<Book> Books { get; set; }
         //public virtual DbSet<Item> Albums { get; set; }
         public virtual DbSet<ItemType> ItemTypes { get; set; }
-        public virtual DbSet<BookType> BookTypes { get; set; }
+        public virtual DbSet<BookGenre> BookGenres { get; set; }
         public virtual DbSet<Phone> Phones { get; set; }
     }
 }

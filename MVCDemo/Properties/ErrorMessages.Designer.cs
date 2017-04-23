@@ -115,6 +115,15 @@ namespace MVCDemo.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to {0} is required..
+        /// </summary>
+        internal static string GenreIsRequired {
+            get {
+                return ResourceManager.GetString("GenreIsRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to {0} is not long enough at least {1} characters are required..
         /// </summary>
         internal static string NameIsNotLongEnough {
@@ -165,6 +174,33 @@ namespace MVCDemo.Properties {
         internal static string PublisherIsTooLong {
             get {
                 return ResourceManager.GetString("PublisherIsTooLong", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} is not long enough at least {1} characters are required..
+        /// </summary>
+        internal static string SummaryIsNotLongEnough {
+            get {
+                return ResourceManager.GetString("SummaryIsNotLongEnough", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} is required..
+        /// </summary>
+        internal static string SummaryIsRequired {
+            get {
+                return ResourceManager.GetString("SummaryIsRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} is too long..
+        /// </summary>
+        internal static string SummaryIsTooLong {
+            get {
+                return ResourceManager.GetString("SummaryIsTooLong", resourceCulture);
             }
         }
         

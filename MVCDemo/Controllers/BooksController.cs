@@ -17,7 +17,7 @@ namespace MVCDemo.Controllers
         // GET: Books
         public ActionResult Index()
         {
-            var books = db.Books.Include(b => b.BookType);
+            var books = db.Books.Include(b => b.BookGenre);
             return View(books.ToList());
         }
 
@@ -39,7 +39,7 @@ namespace MVCDemo.Controllers
         // GET: Books/Create
         public ActionResult Create()
         {
-            ViewBag.BookTypeId = new SelectList(db.BookTypes, "Id", "Name");
+            ViewBag.BookGenreId = new SelectList(db.BookGenres, "Id", "Name");
             return View();
         }
 
@@ -48,7 +48,7 @@ namespace MVCDemo.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Publisher,Name,Description,BookTypeId")] Book book)
+        public ActionResult Create([Bind(Include = "Id,Publisher,Name,Description,BookGenreId")] Book book)
         {
             if (ModelState.IsValid)
             {
@@ -57,7 +57,7 @@ namespace MVCDemo.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.BookTypeId = new SelectList(db.BookTypes, "Id", "Name", book.BookTypeId);
+            ViewBag.BookGenreId = new SelectList(db.BookGenres, "Id", "Name", book.BookGenreId);
             return View(book);
         }
 
@@ -73,7 +73,7 @@ namespace MVCDemo.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.BookTypeId = new SelectList(db.BookTypes, "Id", "Name", book.BookTypeId);
+            ViewBag.BookGenreId = new SelectList(db.BookGenres, "Id", "Name", book.BookGenreId);
             return View(book);
         }
 
@@ -82,7 +82,7 @@ namespace MVCDemo.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Publisher,Name,Description,BookTypeId")] Book book)
+        public ActionResult Edit([Bind(Include = "Id,Publisher,Name,Description,BookGenreId")] Book book)
         {
             if (ModelState.IsValid)
             {
@@ -90,7 +90,7 @@ namespace MVCDemo.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.BookTypeId = new SelectList(db.BookTypes, "Id", "Name", book.BookTypeId);
+            ViewBag.BookGenreId = new SelectList(db.BookGenres, "Id", "Name", book.BookGenreId);
             return View(book);
         }
 

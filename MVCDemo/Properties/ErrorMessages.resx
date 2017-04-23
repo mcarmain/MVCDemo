@@ -135,6 +135,9 @@
   <data name="DescriptionIsTooLong" xml:space="preserve">
     <value>{0} is too long.</value>
   </data>
+  <data name="GenreIsRequired" xml:space="preserve">
+    <value>{0} is required.</value>
+  </data>
   <data name="NameIsNotLongEnough" xml:space="preserve">
     <value>{0} is not long enough at least {1} characters are required.</value>
   </data>
@@ -151,6 +154,15 @@
     <value>{0} is required.</value>
   </data>
   <data name="PublisherIsTooLong" xml:space="preserve">
+    <value>{0} is too long.</value>
+  </data>
+  <data name="SummaryIsNotLongEnough" xml:space="preserve">
+    <value>{0} is not long enough at least {1} characters are required.</value>
+  </data>
+  <data name="SummaryIsRequired" xml:space="preserve">
+    <value>{0} is required.</value>
+  </data>
+  <data name="SummaryIsTooLong" xml:space="preserve">
     <value>{0} is too long.</value>
   </data>
   <data name="TypeIsRequired" xml:space="preserve">
