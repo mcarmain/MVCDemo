@@ -9,14 +9,18 @@ namespace MVCDemo.Controllers
     [Authorize()]
     public class ItemController : Controller
     {
-        // GET: Item
         private SampleDbContext db = new SampleDbContext();
-        // GET: /Item/
+
+        //Get: /Item/
+     
+        // Get: /Item/
+    
         public ActionResult Index(string filter = null, int page = 1,
         int pageSize = 5, string sort = "Id", string sortdir = "ASC")
         {
             var records = new PagedList<Item>();
             ViewBag.filter = filter;
+
             records.Content = db.Items
                   .Where(x => filter == null ||
                       (x.Name.Contains(filter))
@@ -27,7 +31,6 @@ namespace MVCDemo.Controllers
                   .Skip((page - 1) * pageSize)
                   .Take(pageSize)
                   .ToList();
-
             // Count
             records.TotalRecords = db.Items
               .Where(x => filter == null ||
@@ -36,7 +39,9 @@ namespace MVCDemo.Controllers
 
             records.CurrentPage = page;
             records.PageSize = pageSize;
-
+            records.filter = filter;
+            records.sort = sort;
+            records.sortdir = sortdir;
             return View(records);
         }
 

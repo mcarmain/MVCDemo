@@ -17,7 +17,9 @@ namespace MVCDemo.Controllers
         int pageSize = 5, string sort = "PhoneId", string sortdir = "DESC")
         {
             var records = new PagedList<Phone>();
+           
             ViewBag.filter = filter;
+
             records.Content = db.Phones
                   .Where(x => filter == null ||
                       (x.Model.Contains(filter))

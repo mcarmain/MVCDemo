@@ -11,6 +11,9 @@ namespace MVCDemo.Models
         public Int32 CurrentPage { get; set; }
         public Int32 PageSize { get; set; }
         public int TotalRecords { get; set; }
+        public string filter { get; set; }
+        public string sort { get; set; }
+        public string sortdir { get; set; }
 
         public int TotalPages
         {

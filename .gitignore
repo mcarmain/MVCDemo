@@ -72,3 +72,15 @@ MVCDemo/ApplicationInsights.config
 .vs/MVCDemo/v15/.suo
 MVCDemo/App_Data/DefaultConnection.mdf
 *.ldf
+.vs/MVCDemo/v15/.suo
+*.mdf
+MVCDemo/App_Data/DefaultConnection_log.ldf
+MVCDemo/App_Data/DefaultConnection.mdf
+.vs/MVCDemo/v15/.suo
+MVCDemo/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+MVCDemo/MVCDemo.csproj.user
+MVCDemo/App_Data/DefaultConnection_log.ldf
+MVCDemo/App_Data/DefaultConnection_log.ldf
+*.ldf
+MVCDemo/App_Data/DefaultConnection.mdf
+*.suo
