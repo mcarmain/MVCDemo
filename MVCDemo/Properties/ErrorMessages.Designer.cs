@@ -61,6 +61,15 @@ namespace MVCDemo.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to {0} is too long..
+        /// </summary>
+        internal static string ArtifactsIsTooLong {
+            get {
+                return ResourceManager.GetString("ArtifactsIsTooLong", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to {0} is not long enough at least {1} characters are required..
         /// </summary>
         internal static string AuthorIsNotLongEnough {
@@ -84,6 +93,15 @@ namespace MVCDemo.Properties {
         internal static string AuthorIsTooLong {
             get {
                 return ResourceManager.GetString("AuthorIsTooLong", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} is too long..
+        /// </summary>
+        internal static string DependenciesIsTooLong {
+            get {
+                return ResourceManager.GetString("DependenciesIsTooLong", resourceCulture);
             }
         }
         
@@ -147,6 +165,15 @@ namespace MVCDemo.Properties {
         internal static string NameIsTooLong {
             get {
                 return ResourceManager.GetString("NameIsTooLong", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} is too long..
+        /// </summary>
+        internal static string OwnerIsTooLong {
+            get {
+                return ResourceManager.GetString("OwnerIsTooLong", resourceCulture);
             }
         }
         

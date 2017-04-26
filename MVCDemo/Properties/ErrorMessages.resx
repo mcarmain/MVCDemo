@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ArtifactsIsTooLong" xml:space="preserve">
+    <value>{0} is too long.</value>
+  </data>
   <data name="AuthorIsNotLongEnough" xml:space="preserve">
     <value>{0} is not long enough at least {1} characters are required.</value>
   </data>
@@ -125,6 +128,9 @@
   </data>
   <data name="AuthorIsTooLong" xml:space="preserve">
     <value>{0} is too long. Maximum Length is {1} characters</value>
+  </data>
+  <data name="DependenciesIsTooLong" xml:space="preserve">
+    <value>{0} is too long.</value>
   </data>
   <data name="DescriptionIsNotLongEnough" xml:space="preserve">
     <value>{0} is not long enough at least {1} characters are required.</value>
@@ -145,6 +151,9 @@
     <value>{0} is required.</value>
   </data>
   <data name="NameIsTooLong" xml:space="preserve">
+    <value>{0} is too long.</value>
+  </data>
+  <data name="OwnerIsTooLong" xml:space="preserve">
     <value>{0} is too long.</value>
   </data>
   <data name="PublisherIsNotLongEnough" xml:space="preserve">

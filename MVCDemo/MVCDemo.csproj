@@ -191,11 +191,15 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\BookController.cs" />
     <Compile Include="Controllers\BooksController.cs" />
+    <Compile Include="Controllers\TaskController.cs" />
+    <Compile Include="Controllers\TasksController.cs" />
     <Compile Include="Models\Book.cs" />
     <Compile Include="Models\BookGenre.cs" />
     <Compile Include="Models\ClearModel.cs" />
     <Compile Include="Models\Item.cs" />
     <Compile Include="Models\ItemType.cs" />
+    <Compile Include="Models\Task.cs" />
+    <Compile Include="Models\TaskStatus.cs" />
     <Compile Include="Properties\AccountController.cs" />
     <Compile Include="Controllers\ClearController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -337,6 +341,16 @@
     <Content Include="Views\Book\Index.cshtml" />
     <None Include="tools\init.psl" />
     <Content Include="tools\MagicEightBall.psml" />
+    <Content Include="Views\Tasks\Create.cshtml" />
+    <Content Include="Views\Tasks\Delete.cshtml" />
+    <Content Include="Views\Tasks\Details.cshtml" />
+    <Content Include="Views\Tasks\Edit.cshtml" />
+    <Content Include="Views\Tasks\Index.cshtml" />
+    <Content Include="Views\Task\Index.cshtml" />
+    <Content Include="Views\Task\Edit.cshtml" />
+    <Content Include="Views\Task\Details.cshtml" />
+    <Content Include="Views\Task\Delete.cshtml" />
+    <Content Include="Views\Task\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

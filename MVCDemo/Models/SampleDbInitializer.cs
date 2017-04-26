@@ -53,6 +53,18 @@ namespace MVCDemo
             };
             books.ForEach(b => context.Books.Add(b));
 
+            var tasks = new List<Task>
+            {
+            new Task{Name="Add Menu", Description="Add Task Menu & pick icon",Points=1,Artifacts="Views//Shared//_Layout.cshtml",Owner= "Martin Carmain",Complete=true,Dependencies="None"},
+            new Task{Name="Model Entity+", Description="Model Task entity, no associated enties required at this phase",Points=1,Artifacts="Models//Task.cs Models//SampleDbContext Models//SampleDbInitializer.cs Properties//ErrorMessages.resx",Owner= "Martin Carmain",Complete=true,Dependencies="None"},
+            new Task{Name="Design Models", Description="Design Task entity",Points=1,Artifacts="",Owner= "Martin Carmain",Complete=true,Dependencies="None"},
+            new Task{Name="Implement Models", Description="Implement Models",Points=1,Artifacts="",Owner= "Martin Carmain",Complete=true,Dependencies="None"},
+            new Task{Name="Implement Resources", Description="Implement Resources",Points=1,Artifacts="",Owner= "Martin Carmain",Complete=true,Dependencies="None"},
+             new Task{Name="Generate Phase I  REST Entity Views /Tasks", Description="Generate Phase I  REST Entity Views",Points=1,Artifacts="Views",Owner= "Martin Carmain",Complete=true,Dependencies="Models"},
+              new Task{Name="Generate Phase II  REST Entity Views /Task", Description="Generate Phase II  REST Entity Views",Points=1,Artifacts="Views",Owner= "Martin Carmain",Complete=true,Dependencies="Models"},
+            };
+            tasks.ForEach(t => context.Tasks.Add(t));
+
             context.SaveChanges();
             base.Seed(context);
         }
