@@ -36,7 +36,10 @@ namespace MVCDemo
              new Phone{Model="IPhone 8 512GB", Company="Apple",Price= 799},
             new Phone{Model="IPhone 7 256GB", Company="Apple",Price= 699},
             new Phone{Model="IPhone 6 128GB", Company="Apple",Price= 599},
-             new Phone{Model="Samsung Galaxy 0", Company="Samsung",Price= 9}
+             new Phone{Model="Samsung Galaxy 11", Company="Samsung",Price= 900},
+              new Phone{Model="Samsung Galaxy 12", Company="Samsung",Price= 800},
+               new Phone{Model="Samsung Galaxy 13", Company="Samsung",Price= 700},
+                new Phone{Model="Samsung Galaxy 14", Company="Samsung",Price= 600}
             };
             phones.ForEach(p => context.Phones.Add(p));
 

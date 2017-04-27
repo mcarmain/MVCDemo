@@ -66,8 +66,8 @@
 
             <div class="form-group">
                 @Html.LabelFor(m => m.Complete, new { @class = "control-label col-sm-3" })
-                <div class="col-sm-9">
-                    @Html.TextBoxFor(m => m.Complete, new { @class = "form-control required" })
+                <div class="col-sm-1">
+                    @Html.CheckBoxFor(m => m.Complete, new { @class = "form-control" })
                     <div>
                         @Html.ValidationMessageFor(m => m.Complete)
                     </div>

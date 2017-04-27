@@ -84,3 +84,6 @@ MVCDemo/App_Data/DefaultConnection_log.ldf
 *.ldf
 MVCDemo/App_Data/DefaultConnection.mdf
 *.suo
+.vs/MVCDemo/v15/.suo
+*.mdf
+MVCDemo/App_Data/DefaultConnection_log.ldf
