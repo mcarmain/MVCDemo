@@ -1,0 +1,60 @@
+﻿@model MVCDemo.Models.Task
+
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 class="modal-title">Task Detail</h3>
+</div>
+
+<div class="modal-body">
+    <div class="form-horizontal">
+        <div class="form-group">
+            @Html.LabelFor(m => Model.Name, new { @class = "control-label col-sm-3" })
+            <div class="col-sm-9">
+                @Html.TextBoxFor(m => m.Name, new { @class = "form-control required", @disabled = "disabled" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => Model.Description, new { @class = "control-label col-sm-3" })
+            <div class="col-sm-9">
+                @Html.TextBoxFor(m => m.Description, new { @class = "form-control required", @disabled = "disabled" })
+            </div>
+        </div>
+
+     
+        <div class="form-group">
+            @Html.LabelFor(m => Model.Artifacts, new { @class = "control-label col-sm-3" })
+            <div class="col-sm-9">
+                @Html.TextBoxFor(m => m.Artifacts, new { @class = "form-control required", @disabled = "disabled" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => Model.Points , new { @class = "control-label col-sm-3" })
+            <div class="col-sm-9">
+                @Html.TextBoxFor(m => m.Points, new { @class = "form-control required", @disabled = "disabled" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => Model.Owner, new { @class = "control-label col-sm-3" })
+            <div class="col-sm-9">
+                @Html.TextBoxFor(m => m.Owner, new { @class = "form-control required", @disabled = "disabled" })
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            @Html.LabelFor(m => Model.Complete, new { @class = "control-label col-sm-3" })
+            <div class="col-sm-9">
+                @Html.TextBoxFor(m => m.Complete, new { @class = "form-control required", @disabled = "disabled" })
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<div class="modal-footer">
+    <button class="btn btn-warning" data-dismiss="modal">Close</button>
+</div>
