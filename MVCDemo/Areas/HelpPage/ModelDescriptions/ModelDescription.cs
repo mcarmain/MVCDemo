@@ -1,6 +1,6 @@
 using System;
 
-namespace MVCDemo.Areas.HelpPage.ModelDescriptions
+namespace MVCDemo.WebApi.Areas.HelpPage.ModelDescriptions
 {
     /// <summary>
     /// Describes a type model.

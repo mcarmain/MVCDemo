@@ -1,6 +1,5 @@
 ﻿using MVCDemo.Properties;
 using System.ComponentModel.DataAnnotations;
-using MVCDemo.Models;
 
 namespace MVCDemo.Models
 {

@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<parameters>
-  <parameter name="SampleDb-Web.config Connection String" description="SampleDb Connection String used in web.config by the application to access the database." defaultValue="data source=(LocalDb)\MSSQLLocalDB;initial catalog=MVCDemo.Models.SampleDb;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="D:\\GitHub\\MVCDemo\\MVCDemo\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='SampleDb']/@connectionString" />
-  </parameter>
-</parameters>

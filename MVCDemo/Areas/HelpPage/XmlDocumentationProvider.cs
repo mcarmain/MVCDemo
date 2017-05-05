@@ -5,9 +5,9 @@ using System.Reflection;
 using System.Web.Http.Controllers;
 using System.Web.Http.Description;
 using System.Xml.XPath;
-using MVCDemo.Areas.HelpPage.ModelDescriptions;
+using MVCDemo.WebApi.Areas.HelpPage.ModelDescriptions;
 
-namespace MVCDemo.Areas.HelpPage
+namespace MVCDemo.WebApi.Areas.HelpPage
 {
     /// <summary>
     /// A custom <see cref="IDocumentationProvider"/> that reads the API documentation from an XML documentation file.

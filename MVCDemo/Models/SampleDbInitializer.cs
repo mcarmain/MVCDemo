@@ -1,8 +1,5 @@
-﻿using System;
+﻿using MVCDemo.Models;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using MVCDemo.Models;
 namespace MVCDemo
 {
     //public class SampleDbInitializer : System.Data.Entity.DropCreateDatabaseIfModelChanges<SampleDbContext>

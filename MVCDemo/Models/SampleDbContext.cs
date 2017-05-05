@@ -1,11 +1,7 @@
 ﻿
 namespace MVCDemo.Models
 {
-    using System;
     using System.Data.Entity;
-    using System.Linq;
-    using System.ComponentModel.DataAnnotations;
-    using MVCDemo.Properties;
 
     public class SampleDbContext : DbContext
     {

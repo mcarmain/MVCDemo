@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Data.Entity;
+using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
-using System.Data.Entity;
-using MVCDemo.Models;
 
 namespace MVCDemo
 {
@@ -14,14 +10,10 @@ namespace MVCDemo
     {
         protected void Application_Start()
         {
-
-
-            /// Same as next line.... 
             Database.SetInitializer(new SampleDbInitializer());
-            //Database.SetInitializer<SampleDbContext>(new DropCreateDatabaseIfModelChanges<SampleDbContext>());
-            //Database.SetInitializer<SampleDbContext>(new DropCreateDatabaseAlways<SampleDbContext>());
-
+            Database.SetInitializer(new DataContextInitializer());
             AreaRegistration.RegisterAllAreas();
+            GlobalConfiguration.Configure(WebApiConfig.Register);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
