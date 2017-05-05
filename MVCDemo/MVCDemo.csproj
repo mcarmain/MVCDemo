@@ -232,7 +232,8 @@
     <Compile Include="Controllers\BookController.cs" />
     <Compile Include="Controllers\BookGenresController.cs" />
     <Compile Include="Controllers\BooksController.cs" />
-    <Compile Include="Controllers\ProductsController.cs" />
+    <Compile Include="Controllers\WebApi.ItemsController.cs" />
+    <Compile Include="Controllers\WebApi.ProductsController.cs" />
     <Compile Include="Controllers\TaskController.cs" />
     <Compile Include="Controllers\TasksController.cs" />
     <Compile Include="Models\Book.cs" />
