@@ -268,3 +268,8 @@ C:\MVC\roslyn\VBCSCompiler.exe.config
 C:\MVC\MVCDemo.dll.config
 C:\MVC\MVCDemo.dll
 C:\MVC\MVCDemo.pdb
+C:\MVCDemo\MVCDemo\obj\Release\MVCDemo.csprojResolveAssemblyReference.cache
+C:\MVCDemo\MVCDemo\obj\Release\MVCDemo.Properties.ErrorMessages.resources
+C:\MVCDemo\MVCDemo\obj\Release\MVCDemo.csproj.GenerateResource.Cache
+C:\MVCDemo\MVCDemo\obj\Release\MVCDemo.dll
+C:\MVCDemo\MVCDemo\obj\Release\MVCDemo.pdb

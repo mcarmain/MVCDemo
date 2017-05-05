@@ -7,16 +7,160 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <_NewBackgroundProfile>False</_NewBackgroundProfile>
-    <_PublishTargetUrl>C:\inetpub\wwwroot\MVCDemo</_PublishTargetUrl>
+    <_PublishTargetUrl>C:\Website</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="ApplicationInsights.config">
       <publishTime>04/20/2017 17:25:12</publishTime>
     </File>
-    <File Include="bin/Antlr3.Runtime.dll">
-      <publishTime>09/10/2013 16:29:20</publishTime>
+    <File Include="Areas/HelpPage/ApiDescriptionExtensions.cs">
+      <publishTime>05/04/2017 21:59:24</publishTime>
     </File>
-    <File Include="bin/Antlr3.Runtime.pdb">
+    <File Include="Areas/HelpPage/App_Start/HelpPageConfig.cs">
+      <publishTime>05/04/2017 21:59:24</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Controllers/HelpController.cs">
+      <publishTime>05/04/2017 21:59:24</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/HelpPage.css">
+      <publishTime>05/04/2017 21:59:24</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/HelpPageAreaRegistration.cs">
+      <publishTime>05/04/2017 21:59:24</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/HelpPageConfigurationExtensions.cs">
+      <publishTime>05/04/2017 21:59:24</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/ModelDescriptions/CollectionModelDescription.cs">
+      <publishTime>05/04/2017 21:59:24</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/ModelDescriptions/ComplexTypeModelDescription.cs">
+      <publishTime>05/04/2017 21:59:24</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/ModelDescriptions/DictionaryModelDescription.cs">
+      <publishTime>05/04/2017 21:59:24</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/ModelDescriptions/EnumTypeModelDescription.cs">
+      <publishTime>05/04/2017 21:59:24</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/ModelDescriptions/EnumValueDescription.cs">
+      <publishTime>05/04/2017 21:59:24</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/ModelDescriptions/IModelDocumentationProvider.cs">
+      <publishTime>05/04/2017 21:59:24</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/ModelDescriptions/KeyValuePairModelDescription.cs">
+      <publishTime>05/04/2017 21:59:24</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/ModelDescriptions/ModelDescription.cs">
+      <publishTime>05/04/2017 21:59:24</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/ModelDescriptions/ModelDescriptionGenerator.cs">
+      <publishTime>05/04/2017 21:59:24</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/ModelDescriptions/ModelNameAttribute.cs">
+      <publishTime>05/04/2017 21:59:24</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/ModelDescriptions/ModelNameHelper.cs">
+      <publishTime>05/04/2017 21:59:24</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/ModelDescriptions/ParameterAnnotation.cs">
+      <publishTime>05/04/2017 21:59:24</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/ModelDescriptions/ParameterDescription.cs">
+      <publishTime>05/04/2017 21:59:24</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/ModelDescriptions/SimpleTypeModelDescription.cs">
+      <publishTime>05/04/2017 21:59:24</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Models/HelpPageApiModel.cs">
+      <publishTime>05/04/2017 21:59:24</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/SampleGeneration/HelpPageSampleGenerator.cs">
+      <publishTime>05/04/2017 21:59:24</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/SampleGeneration/HelpPageSampleKey.cs">
+      <publishTime>05/04/2017 21:59:24</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/SampleGeneration/ImageSample.cs">
+      <publishTime>05/04/2017 21:59:24</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/SampleGeneration/InvalidSample.cs">
+      <publishTime>05/04/2017 21:59:24</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/SampleGeneration/ObjectGenerator.cs">
+      <publishTime>05/04/2017 21:59:24</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/SampleGeneration/SampleDirection.cs">
+      <publishTime>05/04/2017 21:59:24</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/SampleGeneration/TextSample.cs">
+      <publishTime>05/04/2017 21:59:24</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/Api.cshtml">
+      <publishTime>05/04/2017 21:59:24</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/ApiGroup.cshtml">
+      <publishTime>05/04/2017 21:59:24</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/CollectionModelDescription.cshtml">
+      <publishTime>05/04/2017 21:59:23</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/ComplexTypeModelDescription.cshtml">
+      <publishTime>05/04/2017 21:59:23</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/DictionaryModelDescription.cshtml">
+      <publishTime>05/04/2017 21:59:23</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/EnumTypeModelDescription.cshtml">
+      <publishTime>05/04/2017 21:59:23</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/HelpPageApiModel.cshtml">
+      <publishTime>05/04/2017 21:59:23</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/ImageSample.cshtml">
+      <publishTime>05/04/2017 21:59:23</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/InvalidSample.cshtml">
+      <publishTime>05/04/2017 21:59:23</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/KeyValuePairModelDescription.cshtml">
+      <publishTime>05/04/2017 21:59:23</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/ModelDescriptionLink.cshtml">
+      <publishTime>05/04/2017 21:59:23</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/Parameters.cshtml">
+      <publishTime>05/04/2017 21:59:23</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/Samples.cshtml">
+      <publishTime>05/04/2017 21:59:23</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/SimpleTypeModelDescription.cshtml">
+      <publishTime>05/04/2017 21:59:23</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/TextSample.cshtml">
+      <publishTime>05/04/2017 21:59:23</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/Index.cshtml">
+      <publishTime>05/04/2017 21:59:23</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/ResourceModel.cshtml">
+      <publishTime>05/04/2017 21:59:23</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Shared/_Layout.cshtml">
+      <publishTime>05/04/2017 21:59:23</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Web.config">
+      <publishTime>05/04/2017 21:59:23</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/_ViewStart.cshtml">
+      <publishTime>05/04/2017 21:59:23</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/XmlDocumentationProvider.cs">
+      <publishTime>05/04/2017 21:59:23</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
       <publishTime>09/10/2013 16:29:20</publishTime>
     </File>
     <File Include="bin/ApplicationInsights.config">
@@ -92,10 +236,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/05/2012 10:08:46</publishTime>
     </File>
     <File Include="bin/MVCDemo.dll">
-      <publishTime>05/03/2017 18:52:20</publishTime>
-    </File>
-    <File Include="bin/MVCDemo.pdb">
-      <publishTime>05/03/2017 18:52:20</publishTime>
+      <publishTime>05/03/2017 23:18:01</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
       <publishTime>04/02/2017 17:46:32</publishTime>
@@ -331,23 +472,11 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Scripts/appjs/modal.js">
       <publishTime>04/14/2017 13:39:06</publishTime>
     </File>
-    <File Include="Scripts/appjs/phone.js">
-      <publishTime>04/14/2017 13:39:06</publishTime>
-    </File>
     <File Include="Scripts/bootstrap.js">
       <publishTime>04/20/2017 17:24:34</publishTime>
     </File>
     <File Include="Scripts/bootstrap.min.js">
       <publishTime>04/20/2017 17:24:34</publishTime>
-    </File>
-    <File Include="Scripts/jquery-1.10.2.js">
-      <publishTime>04/10/2017 21:42:32</publishTime>
-    </File>
-    <File Include="Scripts/jquery-1.10.2.min.js">
-      <publishTime>04/10/2017 21:42:32</publishTime>
-    </File>
-    <File Include="Scripts/jquery-1.10.2.min.map">
-      <publishTime>04/10/2017 21:42:32</publishTime>
     </File>
     <File Include="Scripts/jquery-3.1.1.js">
       <publishTime>04/14/2017 15:54:02</publishTime>
@@ -378,9 +507,6 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Scripts/jquery.validate.unobtrusive.min.js">
       <publishTime>04/10/2017 21:42:38</publishTime>
-    </File>
-    <File Include="Scripts/modernizr-2.6.2.js">
-      <publishTime>04/10/2017 21:42:36</publishTime>
     </File>
     <File Include="Scripts/modernizr-2.8.3.js">
       <publishTime>04/20/2017 17:25:14</publishTime>
@@ -468,9 +594,6 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Views/Clear/Clear.cshtml">
       <publishTime>04/21/2017 01:41:06</publishTime>
-    </File>
-    <File Include="Views/Clear/Index.cshtml">
-      <publishTime>04/20/2017 11:37:36</publishTime>
     </File>
     <File Include="Views/Home/About.cshtml">
       <publishTime>04/23/2017 20:01:00</publishTime>
@@ -611,7 +734,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/10/2017 21:42:28</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>05/03/2017 18:47:52</publishTime>
+      <publishTime>05/03/2017 23:18:01</publishTime>
     </File>
   </ItemGroup>
 </Project>
