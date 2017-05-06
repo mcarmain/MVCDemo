@@ -1,0 +1,13 @@
+﻿@section scripts {
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/Client/Scripts/app.js"></script>
+    <script src="~/Client/Scripts/ListController.js"></script>
+<script src="~/Scripts/angular-route.js"></script>
+} 
+<div ng-app="app">
+    <p ng-cloak>{{2+3}}&nbsp;</p>
+    <div ng-controller="ListCtrl"><p ng-cloak>{{message}}&nbsp;</p></div>
+
+    <ng-view></ng-view>
+</div>
+

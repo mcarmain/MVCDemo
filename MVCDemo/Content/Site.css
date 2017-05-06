@@ -53,3 +53,7 @@ tfoot > tr > td a:link {
     padding: 5px 10px;
     border-radius: 7px;
 }
+
+MainCtrl {
+    margin: 20px 20px 20px 20px;
+}

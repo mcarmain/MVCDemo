@@ -544,3 +544,4 @@ D:\GitHub\MVCDemo\MVCDemo\obj\Debug\MVCDemo.Properties.ErrorMessages.resources
 D:\GitHub\MVCDemo\MVCDemo\obj\Debug\MVCDemo.csproj.GenerateResource.Cache
 D:\GitHub\MVCDemo\MVCDemo\obj\Debug\MVCDemo.dll
 D:\GitHub\MVCDemo\MVCDemo\obj\Debug\MVCDemo.pdb
+D:\GitHub\MVCDemo\MVCDemo\obj\Debug\MVCDemo.csprojResolveAssemblyReference.cache
