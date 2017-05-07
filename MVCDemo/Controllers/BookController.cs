@@ -10,7 +10,7 @@ namespace MVCDemo.Controllers
     public class BookController : Controller
     {
         // GET: Book
-        private SampleDbContext db = new SampleDbContext();
+        private DemoDbContext db = new DemoDbContext();
         // GET: /Book/
         public ActionResult Index(string filter = null, int page = 1,
         int pageSize = 5, string sort = "Id", string sortdir = "ASC")

@@ -13,7 +13,7 @@ namespace MVCDemo.Controllers
     [Authorize]
     public class ItemTypesController : Controller
     {
-        private SampleDbContext db = new SampleDbContext();
+        private DemoDbContext db = new DemoDbContext();
 
         // GET: ItemTypes
         public ActionResult Index()

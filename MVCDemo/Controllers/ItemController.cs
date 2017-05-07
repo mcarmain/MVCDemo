@@ -9,7 +9,7 @@ namespace MVCDemo.Controllers
     [Authorize()]
     public class ItemController : Controller
     {
-        private SampleDbContext db = new SampleDbContext();
+        private DemoDbContext db = new DemoDbContext();
 
         //Get: /Item/
      

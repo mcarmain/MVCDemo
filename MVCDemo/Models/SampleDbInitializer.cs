@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 namespace MVCDemo
 {
-    //public class SampleDbInitializer : System.Data.Entity.DropCreateDatabaseIfModelChanges<SampleDbContext>
-    public class SampleDbInitializer : System.Data.Entity.DropCreateDatabaseIfModelChanges<SampleDbContext>
+    //public class SampleDbInitializer : System.Data.Entity.DropCreateDatabaseIfModelChanges<DemoDbContext>
+    public class SampleDbInitializer : System.Data.Entity.DropCreateDatabaseIfModelChanges<DemoDbContext>
     {
-        public override void InitializeDatabase(SampleDbContext context)
+        public override void InitializeDatabase(DemoDbContext context)
         {
             if (context.Database.Exists())
             {
@@ -16,7 +16,7 @@ namespace MVCDemo
             }
             base.InitializeDatabase(context);
         }
-        protected override void Seed(SampleDbContext context)
+        protected override void Seed(DemoDbContext context)
         {
 
             var type1 = context.ItemTypes.Add(new ItemType { Id = 1, Name = "Type I" });
@@ -56,7 +56,7 @@ namespace MVCDemo
             var tasks = new List<Task>
             {
             new Task{Name="Add Menu", Description="Add Task Menu & pick icon",Points=1,Artifacts="Views//Shared//_Layout.cshtml",Owner= "Martin Carmain",Complete=true,Dependencies="None"},
-            new Task{Name="Model Entity+", Description="Model Task entity, no associated enties required at this phase",Points=1,Artifacts="Models//Task.cs Models//SampleDbContext Models//SampleDbInitializer.cs Properties//ErrorMessages.resx",Owner= "Martin Carmain",Complete=true,Dependencies="None"},
+            new Task{Name="Model Entity+", Description="Model Task entity, no associated enties required at this phase",Points=1,Artifacts="Models//Task.cs Models//DemoDbContext Models//SampleDbInitializer.cs Properties//ErrorMessages.resx",Owner= "Martin Carmain",Complete=true,Dependencies="None"},
             new Task{Name="Design Models", Description="Design Task entity",Points=1,Artifacts="",Owner= "Martin Carmain",Complete=true,Dependencies="None"},
             new Task{Name="Implement Models", Description="Implement Models",Points=1,Artifacts="",Owner= "Martin Carmain",Complete=true,Dependencies="None"},
             new Task{Name="Implement Resources", Description="Implement Resources",Points=1,Artifacts="",Owner= "Martin Carmain",Complete=true,Dependencies="None"},

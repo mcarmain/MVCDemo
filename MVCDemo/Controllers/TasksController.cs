@@ -12,7 +12,7 @@ namespace MVCDemo.Controllers
 {
     public class TasksController : Controller
     {
-        private SampleDbContext db = new SampleDbContext();
+        private DemoDbContext db = new DemoDbContext();
 
         // GET: Tasks
         public ActionResult Index()

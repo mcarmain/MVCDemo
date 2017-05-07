@@ -14,7 +14,7 @@ namespace MVCDemo.WebApi.Controllers
 {
     public class ItemsController : ApiController
     {
-        private SampleDbContext db = new SampleDbContext();
+        private DemoDbContext db = new DemoDbContext();
 
         // GET: api/Items
         public IQueryable<Item> GetItems()

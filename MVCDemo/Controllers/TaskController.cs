@@ -10,7 +10,7 @@ namespace MVCDemo.Controllers
     public class TaskController : Controller
     {
         // GET: Task
-        private SampleDbContext db = new SampleDbContext();
+        private DemoDbContext db = new DemoDbContext();
         // GET: /Task/
         public ActionResult Index(string filter = null, int page = 1,
         int pageSize = 10, string sort = "Id", string sortdir = "ASC")

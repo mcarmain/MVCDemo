@@ -14,7 +14,7 @@ namespace MVCDemo.Controllers
 {
     public class BookGenresController : ApiController
     {
-        private SampleDbContext db = new SampleDbContext();
+        private DemoDbContext db = new DemoDbContext();
 
         // GET: api/BookGenres
         public IQueryable<BookGenre> GetBookGenres()

@@ -24,7 +24,7 @@ namespace MVCDemo.Controllers
             if (ModelState.IsValid)
             {
 
-                SampleDbContext context = new SampleDbContext();
+                DemoDbContext context = new DemoDbContext();
                 context.Database.Delete();
                 context.Database.Initialize(true);
                 context.SaveChanges();

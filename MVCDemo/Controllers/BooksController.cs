@@ -12,7 +12,7 @@ namespace MVCDemo.Controllers
 {
     public class BooksController : Controller
     {
-        private SampleDbContext db = new SampleDbContext();
+        private DemoDbContext db = new DemoDbContext();
 
         // GET: Books
         public ActionResult Index()

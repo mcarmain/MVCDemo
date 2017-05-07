@@ -1,0 +1,15 @@
+﻿<div ng-controller="ListCtrl" ng-cloak>
+    <div class="container">
+        <h2>Movies</h2>
+        <p>Movies from across the globe.</p>
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <tr><td class="col-sm-6 text-left text-nowrap">Title</td><td class="col-sm-6 text-left text-nowrap">Details</td></tr>
+                <tr ng-repeat="movie in movies">
+                    <td class="text-left text-nowrap">{{movie.Title}}</td>
+                    <td class="text-left text-nowrap"><a href="#/details/{{movie.Id}}">Details</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

@@ -241,6 +241,7 @@
     <Compile Include="Models\BookGenre.cs" />
     <Compile Include="Models\ClearModel.cs" />
     <Compile Include="Models\DataContext.cs" />
+    <Compile Include="Models\DemoDbContext.cs" />
     <Compile Include="Models\Item.cs" />
     <Compile Include="Models\ItemType.cs" />
     <Compile Include="Models\Product.cs" />
@@ -263,7 +264,6 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\PagedList.cs" />
     <Compile Include="Models\Phone.cs" />
-    <Compile Include="Models\SampleDbContext.cs" />
     <Compile Include="Models\SampleDbInitializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\ErrorMessages.Designer.cs">
@@ -276,6 +276,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
+    <Content Include="Client\Scripts\DetailsController.js" />
+    <Content Include="Client\Views\details.html" />
+    <Content Include="Client\Views\list.html" />
+    <Content Include="Client\Views\list2.html" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -1194,6 +1198,7 @@
     <Content Include="Views\Task\Delete.cshtml" />
     <Content Include="Views\Task\Create.cshtml" />
     <Content Include="Views\Item2\index.cshtml" />
+    <Content Include="Views\Item2\index2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

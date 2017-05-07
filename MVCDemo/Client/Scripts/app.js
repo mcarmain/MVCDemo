@@ -11,7 +11,18 @@
     
     app.controller('ListCtrl', function ($scope) {
         $scope.message = 'Hello World!';
-    });
+        $scope.movies = [
+            { Id: '1',Title:'Gone with the Wind',ReleaseYr:'1930',Runtime:'90' },
+            { Id: '2',Title:'Ghostbusters', ReleaseYr: '1982', Runtime: '90' }
+        ];
+    }); 
+
+
+    var DetailsController = function ($scope, $http, $routeParams) {
+        var id = $routeParams.id;
+        $http.get("/api/movie/" + id).success(function (data) { $scope.movie = data; });
+    };
+    app.controller('DetailsController',DetailsController);
      //=============================
 })();
 

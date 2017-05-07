@@ -3,7 +3,7 @@ namespace MVCDemo.Models
 {
     using System.Data.Entity;
 
-    public class SampleDbContext : DbContext
+    public class DemoDbContext : DbContext
     {
         // Your context has been configured to use a 'SampleDb' connection string from your application's 
         // configuration file (App.config or Web.config). By default, this connection string targets the 
@@ -11,8 +11,8 @@ namespace MVCDemo.Models
         // 
         // If you wish to target a different database and/or database provider, modify the 'SampleDb' 
         // connection string in the application configuration file.
-        public SampleDbContext()
-            : base("name=SampleDb")
+        public DemoDbContext()
+            : base("name=DemoDb")
         {
         }
 

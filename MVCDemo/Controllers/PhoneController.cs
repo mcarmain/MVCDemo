@@ -10,7 +10,7 @@ namespace MVCDemo.Controllers
     public class PhoneController : Controller
     {
         // GET: Phone
-        private SampleDbContext db = new SampleDbContext();
+        private DemoDbContext db = new DemoDbContext();
 
         // GET: /Phone/
         public ActionResult Index(string filter = null, int page = 1,
